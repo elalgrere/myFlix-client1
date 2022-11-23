@@ -945,26 +945,18 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _mainView = require("./components/main-view/main-view");
 // Import statement to indicate that you need to bundle `./index.scss`
 var _indexScss = require("./index.scss");
 // Main component (will eventually use all the others)
 class MyFlixApplication extends _reactDefault.default.Component {
     render() {
-        return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
-            className: "my-flix",
+        return(/*#__PURE__*/ _jsxRuntime.jsx(_mainView.MainView, {
             __source: {
                 fileName: "src/index.jsx",
-                lineNumber: 11
+                lineNumber: 13
             },
-            __self: this,
-            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                __source: {
-                    fileName: "src/index.jsx",
-                    lineNumber: 12
-                },
-                __self: this,
-                children: "Good morning"
-            })
+            __self: this
         }));
     }
 }
@@ -978,7 +970,7 @@ _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElemen
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","./index.scss":"jUTZ8","@parcel/transformer-js/src/esmodule-helpers.js":"501mK","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5c9Lz"}],"8xIwr":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","./index.scss":"jUTZ8","@parcel/transformer-js/src/esmodule-helpers.js":"501mK","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5c9Lz","./components/main-view/main-view":"2zHas"}],"8xIwr":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-runtime.development.js');
 
@@ -25400,6 +25392,305 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"10qQe"}]},["lkMQ1","kjcZ2","dLPEP"], "dLPEP", "parcelRequire63cf")
+},{"react-refresh/runtime":"10qQe"}],"2zHas":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$35bf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$35bf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainView", ()=>MainView
+);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _movieCard = require("../movie-card/movie-card");
+var _movieView = require("../movie-view/movie-view");
+class MainView extends _reactDefault.default.Component {
+    constructor(){
+        super();
+        this.state = {
+            movies: [
+                {
+                    _id: "633ac7af7fdb3585e31c4da0",
+                    Title: "Kill Bill",
+                    Description: "A two-part American action thriller film released in 2003 and 2004 respectively, which was written and directed by Quentin Tarantino . Kill Bill , which was originally intended to have a single theatrical release, but was more than four hours long, was split into two volumes: Kill Bill: Volume 1 , released in late 2003, and Kill Bill: Volume 2, released in early 2004. The two films were well received by critics, with many praising their directing style and homage to film genres such as Hong Kong martial arts films, samurai films , spaghetti westerns , girls with guns and revenge",
+                    Genre: {
+                        Name: "Thriller",
+                        Description: "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience"
+                    },
+                    Director: {
+                        Name: "Quentin Tarantino",
+                        Bio: "In 1992 he began his career as an independent filmmaker with the premiere of Reservoir Dogs, considered by Empire magazine as the best independent film of all time. His popularity only grew with his second feature film, Pulp Fiction ( 1994), a black comedy anthology that became a huge success with critics and audiences, as well as a fundamental piece of popular culture. Entertainment Weekly designated it as the best film released between 1983 and 2008, and some critics of the British Film Institute placed it at number 127 of the best films of all time.23 In Jackie Brown (1997), Tarantino paid homage to the blaxploitation genre",
+                        Birth: "27/03/1963",
+                        Death: ""
+                    },
+                    ImagePath: "https://upload.wikimedia.org/wikipedia/en/2/2c/Kill_Bill_Volume_1.png",
+                    Actors: [
+                        "Uma Thurman",
+                        "Lucy Liu",
+                        "Michael Madsen"
+                    ],
+                    Featured: true
+                },
+                {
+                    _id: "633ac7c97fdb3585e31c4da1",
+                    Title: "Babel",
+                    Description: "A 2006 film directed by Mexican filmmaker Alejandro González Iñárritu , with an original screenplay by writer Guillermo Arriaga , and starring Brad Pitt , Cate Blanchett , Gael García Bernal , Adriana Barraza , Rinko Kikuchi , and Kōji Yakusho .The film premiered at Cannes on May 23, 2006 3 and completes González Iñárritu Trilogy of Death, which began with Amores Perros and continued with 21 Gramsç. Babel won the Golden Globe for best dramatic film in 2007 and was nominated for seven Oscars , including best film and best director . It finally won the award in the category of best soundtrackç",
+                    Genre: {
+                        Name: "Drama",
+                        Description: "In film and television, drama is a category or genre of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone. Drama of this kind is usually qualified with additional terms that specify its particular super-genre, macro-genre, or micro-genre.  To these ends, a primary element in a drama is the occurrence of conflict—emotional, social, or otherwise—and its resolution in the course of the storyline"
+                    },
+                    Director: {
+                        Name: "Alejandro González Iñárritu",
+                        Bio: "Mexican filmmaker, screenwriter, producer, announcer and composer, and winner of four Oscar Awards. He is one of the most acclaimed and internationally recognized filmmakers. His debut film, Amores Perros, premiered at the Cannes Film Festival and won the Critics Week Grand Prix and was nominated for an Academy Award for Best Foreign Language Film in 2000.  González Iñárritu is the first Latin American filmmaker to become president of the jury of the 72nd Cannes Film Festival in 2019, the same year in which he received an honorary doctorate from the National Autonomous University of Mexico",
+                        Birth: "15/08/1963",
+                        Death: ""
+                    },
+                    ImagePath: "https://play.google.com/store/movies/details/Babel?id=u8h5wAthZ7A&hl=de_AT&gl=US",
+                    Actors: [
+                        "Brad Pitt",
+                        "Cate Blanchett",
+                        "Gael García Bernal"
+                    ],
+                    Featured: true
+                },
+                {
+                    _id: "633ac7da7fdb3585e31c4da2",
+                    Title: "The Return of the Jedi",
+                    Description: "A space opera film released on December 25. May 1983 (six years after the first film was released), and directed by Richard Marquand. It was the third film released in the Star Wars saga and the sixth in terms of internal chronology of the saga. Of the original trilogy it was the most criticized film, since many people considered it the most childish for the inclusion of the Ewoks. Even so, it was acclaimed by most people, who considered it a great conclusion to the saga.",
+                    Genre: {
+                        Name: "Science fiction",
+                        Description: "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, spacecraft, robots, cyborgs, interstellar travel or other technologies. Science fiction films have often been used to focus on political or social issues, and to explore philosophical issues like the human condition"
+                    },
+                    Director: {
+                        Name: "George Lukas",
+                        Bio: "American filmmaker, writer, philanthropist and businessman. Lucas is best known for creating the Star Wars and Indiana Jones franchises and founding Lucasfilm, LucasArts, and Industrial Light & Magic. He served as president of Lucasfilm before selling it to The Walt Disney Company in 2012 ",
+                        Birth: "14/05/1944",
+                        Death: ""
+                    },
+                    ImagePath: "https://es.wikipedia.org/wiki/Star_Wars:_Episode_VI_-_Return_of_the_Jedi#/media/Archivo:Returnofthejedi-logo2.sv",
+                    Actors: [
+                        "Carry Fisher",
+                        "Harrison Ford",
+                        "Sebastian Shaw"
+                    ],
+                    Featured: true
+                }
+            ]
+        };
+    }
+    setSelectedMovie(newSelectedMovie) {
+        this.setState({
+            selectedMovie: newSelectedMovie
+        });
+    }
+    render() {
+        const { movies , selectedMovie  } = this.state;
+        if (movies.length === 0) return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+            className: "main-view",
+            __source: {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 78
+            },
+            __self: this,
+            children: "The list is empty!"
+        }));
+        return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+            className: "main-view",
+            __source: {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 81
+            },
+            __self: this,
+            children: selectedMovie ? /*#__PURE__*/ _jsxRuntime.jsx(_movieView.MovieView, {
+                movie: selectedMovie,
+                onBackClick: (newSelectedMovie)=>{
+                    this.setSelectedMovie(newSelectedMovie);
+                },
+                __source: {
+                    fileName: "src/components/main-view/main-view.jsx",
+                    lineNumber: 83
+                },
+                __self: this
+            }) : movies.map((movie)=>/*#__PURE__*/ _jsxRuntime.jsx(_movieCard.MovieCard, {
+                    movie: movie,
+                    onMovieClick: (movie1)=>{
+                        this.setSelectedMovie(movie1);
+                    },
+                    __source: {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 85
+                    },
+                    __self: this
+                }, movie._id)
+            )
+        }));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$35bf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"501mK","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5c9Lz","../movie-card/movie-card":"6EiBJ","../movie-view/movie-view":"ikZdr"}],"6EiBJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4249 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4249.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MovieCard", ()=>MovieCard
+);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class MovieCard extends _reactDefault.default.Component {
+    render() {
+        const { movie , onMovieClick  } = this.props;
+        return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+            className: "movie-card",
+            onClick: ()=>{
+                onMovieClick(movie);
+            },
+            __source: {
+                fileName: "src/components/movie-card/movie-card.jsx",
+                lineNumber: 7
+            },
+            __self: this,
+            children: movie.Title
+        }));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$4249.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"501mK","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5c9Lz"}],"ikZdr":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3741 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3741.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MovieView", ()=>MovieView
+);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class MovieView extends _reactDefault.default.Component {
+    render() {
+        const { movie , onBackClick  } = this.props;
+        return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            className: "movie-view",
+            __source: {
+                fileName: "src/components/movie-view/movie-view.jsx",
+                lineNumber: 9
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "movie-poster",
+                    __source: {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 10
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                        src: movie.ImagePath,
+                        __source: {
+                            fileName: "src/components/movie-view/movie-view.jsx",
+                            lineNumber: 11
+                        },
+                        __self: this
+                    })
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                    className: "movie-title",
+                    __source: {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 13
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            className: "label",
+                            __source: {
+                                fileName: "src/components/movie-view/movie-view.jsx",
+                                lineNumber: 14
+                            },
+                            __self: this,
+                            children: "Title: "
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            className: "value",
+                            __source: {
+                                fileName: "src/components/movie-view/movie-view.jsx",
+                                lineNumber: 15
+                            },
+                            __self: this,
+                            children: movie.Title
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                    className: "movie-description",
+                    __source: {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 17
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            className: "label",
+                            __source: {
+                                fileName: "src/components/movie-view/movie-view.jsx",
+                                lineNumber: 18
+                            },
+                            __self: this,
+                            children: "Description: "
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            className: "value",
+                            __source: {
+                                fileName: "src/components/movie-view/movie-view.jsx",
+                                lineNumber: 19
+                            },
+                            __self: this,
+                            children: movie.Description
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                    onClick: ()=>{
+                        onBackClick(null);
+                    },
+                    __source: {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 21
+                    },
+                    __self: this,
+                    children: "Back"
+                })
+            ]
+        }));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$3741.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"501mK","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5c9Lz"}]},["lkMQ1","kjcZ2","dLPEP"], "dLPEP", "parcelRequire63cf")
 
 //# sourceMappingURL=index.6701a6e1.js.map
